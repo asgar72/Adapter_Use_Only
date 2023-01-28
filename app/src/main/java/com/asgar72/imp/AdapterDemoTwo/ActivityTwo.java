@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.asgar72.imp.R;
-
+//In this activity which Adapter use  BaseAdapter use...
 public class ActivityTwo extends AppCompatActivity {
 
     ListView listview_two;
 
-    int[] animal_imgs = {R.drawable.lion, R.drawable.dog, R.drawable.dear, R.drawable.picock, R.drawable.parrot,R.drawable.lion, R.drawable.dog, R.drawable.dear, R.drawable.picock, R.drawable.parrot};
+    int[] animal_imgs = {R.drawable.lion, R.drawable.dog, R.drawable.deer, R.drawable.picock, R.drawable.parrot,R.drawable.lion, R.drawable.dog, R.drawable.deer, R.drawable.picock, R.drawable.parrot};
     String[] animal_names={"Lion","Dog","Dear","pickok","Parrot","Lion","Dog","Dear","pickok","Parrot"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {

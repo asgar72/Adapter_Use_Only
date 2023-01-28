@@ -61,13 +61,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="BaseAdapter"
+            android:text="ArrayAdapter"
             android:textAllCaps="false"
             android:textSize="15sp" />
     </LinearLayout>
 
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Custom_Array_Adapter"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+    </LinearLayout>
 
 
 </LinearLayout>
