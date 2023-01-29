@@ -11,6 +11,8 @@ public class Animals
         this.animal_name = animal_name;
     }
 
+
+    // this is getter methods //encapsulation
     public  int getAnimal_image()
     {
         return  animal_image;

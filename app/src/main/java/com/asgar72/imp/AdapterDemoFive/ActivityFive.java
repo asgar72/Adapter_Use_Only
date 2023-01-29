@@ -29,11 +29,12 @@ public class ActivityFive extends AppCompatActivity {
         //animal_List.add(animals);
 
         //------------below is custom arraylist --------------------------///
+        //collections
         animal_List.add(new Animals(R.drawable.deer,"Deer"));
         animal_List.add(new Animals(R.drawable.dog,"Dog"));
         animal_List.add(new Animals(R.drawable.lion,"Lion"));
         animal_List.add(new Animals(R.drawable.parrot,"Parrot"));
-        animal_List.add(new Animals(R.drawable.picock,"Pickock"));
+        animal_List.add(new Animals(R.drawable.peacock,"Pickock"));
         animal_List.add(new Animals(R.drawable.deer,"Deer"));
         animal_List.add(new Animals(R.drawable.dog,"Dog"));
         animal_List.add(new Animals(R.drawable.lion,"Lion"));

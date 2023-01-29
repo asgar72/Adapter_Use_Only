@@ -11,7 +11,7 @@ public class ActivityTwo extends AppCompatActivity {
 
     ListView listview_two;
 
-    int[] animal_imgs = {R.drawable.lion, R.drawable.dog, R.drawable.deer, R.drawable.picock, R.drawable.parrot,R.drawable.lion, R.drawable.dog, R.drawable.deer, R.drawable.picock, R.drawable.parrot};
+    int[] animal_imgs = {R.drawable.lion, R.drawable.dog, R.drawable.deer, R.drawable.peacock, R.drawable.parrot,R.drawable.lion, R.drawable.dog, R.drawable.deer, R.drawable.peacock, R.drawable.parrot};
     String[] animal_names={"Lion","Dog","Dear","pickok","Parrot","Lion","Dog","Dear","pickok","Parrot"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
