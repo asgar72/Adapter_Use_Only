@@ -8,11 +8,12 @@ import android.widget.Button;
 import com.asgar72.imp.AdapterDemoFive.ActivityFive;
 import com.asgar72.imp.AdapterDemoFour.ActivityFour;
 import com.asgar72.imp.AdapterDemoOne.ActivityOne;
+import com.asgar72.imp.AdapterDemoSix.ActivitySix;
 import com.asgar72.imp.AdapterDemoThree.ActivityThree;
 import com.asgar72.imp.AdapterDemoTwo.ActivityTwo;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn1, btn2,btn3,btn4,btn_5;
+    Button btn1, btn2,btn3,btn4,btn_5,btn_6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btn3 = findViewById(R.id.btn3);
         btn4 = findViewById(R.id.btn4);
         btn_5 = findViewById(R.id.btn_5);
+        btn_6 = findViewById(R.id.btn_6);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +62,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ob = new Intent(getApplicationContext(), ActivitySix.class);
+                startActivity(ob);
+            }
+        });
 
 
     }

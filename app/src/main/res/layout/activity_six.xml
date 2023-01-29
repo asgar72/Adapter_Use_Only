@@ -4,13 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdapterDemoSix.ActivitySix">
-    
+    tools:context=".AdapterDemoSix.ActivitySix"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ListView Using Simple_Adapters"
+            android:textColor="@color/heading"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="#000"
         android:dividerHeight="3dp"
-        android:id="@+id/listview_six"/>
+        android:id="@+id/listview_six"
+        android:listSelector="#7D8786"/>
 
 </LinearLayout>
