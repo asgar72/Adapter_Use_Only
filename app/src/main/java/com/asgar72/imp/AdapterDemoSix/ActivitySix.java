@@ -17,8 +17,8 @@ import java.util.HashMap;
 public class ActivitySix extends AppCompatActivity {
                                 //Use the SimpleAdaptor
     ListView listview_six;
-    int[] animal_imgs={R.drawable.deer,R.drawable.dog,R.drawable.lion,R.drawable.parrot,R.drawable.peacock};
-    String[] animal_name={"Deer","Dog","Lion","Parrot","Peacock"};
+    int[] animal_imgs={R.drawable.deer,R.drawable.dog,R.drawable.lion,R.drawable.parrot,R.drawable.peacock,R.drawable.deer,R.drawable.dog,R.drawable.lion,R.drawable.parrot,R.drawable.peacock};
+    String[] animal_name={"Deer","Dog","Lion","Parrot","Peacock","Deer","Dog","Lion","Parrot","Peacock"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

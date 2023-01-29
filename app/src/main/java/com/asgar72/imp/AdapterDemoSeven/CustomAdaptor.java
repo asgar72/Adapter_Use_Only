@@ -1,4 +1,4 @@
-package com.asgar72.imp.AdapterDemoSix;
+package com.asgar72.imp.AdapterDemoSeven;
 
 import android.content.Context;
 import android.widget.SimpleAdapter;
@@ -13,12 +13,10 @@ public class CustomAdaptor extends SimpleAdapter {
     Context context;
     ArrayList<HashMap<String, ?>> arrayList;
 
-    public CustomAdaptor(Context context, List<? extends Map<String, ?>> data, int resource, String[] from, int[] to)
-    {
+    public CustomAdaptor(Context context, List<? extends Map<String, ?>> data, int resource, String[] from, int[] to) {
         super(context, data, resource, from, to);
-        
-        this.context=context;
-        this.arrayList= (ArrayList<HashMap<String, ?>>)  data;
+        this.context = context;
+        this.arrayList = (ArrayList<HashMap<String, ?>>) data;
     }
 
     //other methods if required....
