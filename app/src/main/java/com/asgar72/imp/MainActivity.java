@@ -1,19 +1,23 @@
 package com.asgar72.imp;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.asgar72.imp.AdapterDemoEight.ActivityEight;
 import com.asgar72.imp.AdapterDemoFive.ActivityFive;
 import com.asgar72.imp.AdapterDemoFour.ActivityFour;
 import com.asgar72.imp.AdapterDemoOne.ActivityOne;
+import com.asgar72.imp.AdapterDemoSeven.ActivitySeven;
 import com.asgar72.imp.AdapterDemoSix.ActivitySix;
 import com.asgar72.imp.AdapterDemoThree.ActivityThree;
 import com.asgar72.imp.AdapterDemoTwo.ActivityTwo;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn1, btn2,btn3,btn4,btn_5,btn_6;
+    Button btn1, btn2,btn3,btn4,btn_5,btn_6,btn_7,btn8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         btn4 = findViewById(R.id.btn4);
         btn_5 = findViewById(R.id.btn_5);
         btn_6 = findViewById(R.id.btn_6);
+        btn_7 = findViewById(R.id.btn_7);
+        btn8 = findViewById(R.id.btn8);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +72,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent ob = new Intent(getApplicationContext(), ActivitySix.class);
+                startActivity(ob);
+            }
+        });
+        btn_7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ob = new Intent(getApplicationContext(), ActivitySeven.class);
+                startActivity(ob);
+            }
+        });
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ob = new Intent(getApplicationContext(), ActivityEight.class);
                 startActivity(ob);
             }
         });

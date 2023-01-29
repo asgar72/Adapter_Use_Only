@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".AdapterDemoSeven.ActivitySeven">
+    tools:context=".AdapterDemoEight.ActivityEight"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,18 +16,27 @@
             android:layout_gravity="top"
             android:gravity="center"
             android:padding="10dp"
-            android:text="ListView Using Custom_Simple_Adapters"
+            android:text="ListView &amp; SearchView Using Cursor_Adapters"
             android:textColor="@color/heading"
             android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
 
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:queryHint="Enter Name"
+        app:iconifiedByDefault="false"
+        android:background="#96FDF1"
+        android:id="@+id/searchView_one">
+        <requestFocus/>
+    </androidx.appcompat.widget.SearchView>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listview_Seven"
-        android:dividerHeight="2dp"
-        android:divider="#000"
-        android:listSelector="#657E7B"/>
+        android:layout_marginTop="10dp"
+        android:id="@+id/listview_searchone"/>
+
 
 </LinearLayout>

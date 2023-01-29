@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Imp"
         tools:targetApi="31">
         <activity
+            android:name=".AdapterDemoEight.ActivityEight"
+            android:exported="false" />
+        <activity
             android:name=".AdapterDemoSeven.ActivitySeven"
             android:exported="false" />
         <activity
