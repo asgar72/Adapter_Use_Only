@@ -16,7 +16,7 @@
             android:layout_gravity="top"
             android:gravity="center"
             android:padding="10dp"
-            android:text="ListView &amp; SearchView Using Cursor_Adapters"
+            android:text="ListView &amp; SearchView Using BaseAdapter"
             android:textColor="@color/heading"
             android:textSize="20sp"
             android:textStyle="bold" />
