@@ -1,5 +1,6 @@
 package com.asgar72.imp.AdapterDemoEight;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,7 +49,7 @@ public class SearchAdaptor extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         View view1 = layoutInflater.inflate(R.layout.ui_view_eight, null);
-        TextView tv = view1.findViewById(R.id.textview_eight);
+        TextView tv = view1.findViewById(R.id.tvname);
         tv.setText(al_names.get(i).toString());
         return view1;
     }
@@ -57,8 +58,8 @@ public class SearchAdaptor extends BaseAdapter {
     public void myFilter(String str)
     {
         al_names.clear();
-
-        for (Object name_obj : al_new_names) {
+        for (Object name_obj : al_new_names)
+        {
             if (name_obj.toString().contains(str)) // ye check krega ke maine jo search bar mai type kiya hai oo uske andar hai ya nahi
             {
                 al_names.add(name_obj.toString());
