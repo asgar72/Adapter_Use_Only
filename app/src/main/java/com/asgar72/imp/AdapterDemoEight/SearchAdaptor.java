@@ -13,11 +13,9 @@ import com.asgar72.imp.R;
 import java.util.ArrayList;
 
 public class SearchAdaptor extends BaseAdapter {
-
     Context context;
     ArrayList al_names;
     LayoutInflater layoutInflater;
-
     ArrayList al_new_names;
 
     //this is constructor
@@ -25,12 +23,10 @@ public class SearchAdaptor extends BaseAdapter {
         this.context = context;
         this.al_names = names;
         layoutInflater = LayoutInflater.from(context);
-
         //sare name ko aik alag array mai store krna
         al_new_names = new ArrayList();
         al_new_names.addAll(al_names);
     }
-
     @Override
     public int getCount() {
         return al_names.size();
@@ -55,11 +51,9 @@ public class SearchAdaptor extends BaseAdapter {
     }
 
     // this is my method
-    public void myFilter(String str)
-    {
+    public void myFilter(String str) {
         al_names.clear();
-        for (Object name_obj : al_new_names)
-        {
+        for (Object name_obj : al_new_names) {
             if (name_obj.toString().contains(str)) // ye check krega ke maine jo search bar mai type kiya hai oo uske andar hai ya nahi
             {
                 al_names.add(name_obj.toString());

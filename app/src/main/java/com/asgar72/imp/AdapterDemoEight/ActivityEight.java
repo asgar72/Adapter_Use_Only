@@ -36,6 +36,10 @@ public class ActivityEight extends AppCompatActivity {
         names.add("Akbar");
         names.add("Rehan");
         names.add("Atahar");
+        names.add("aaaa");
+        names.add("bcdfrghj");
+
+
 
         SearchAdaptor searchAdaptor = new SearchAdaptor(this, names);
         listview_searchone.setAdapter(searchAdaptor);
@@ -45,27 +49,11 @@ public class ActivityEight extends AppCompatActivity {
             public boolean onQueryTextSubmit(String query) {
                 return false;
             }
-
             @Override
             public boolean onQueryTextChange(String s) {
                 searchAdaptor.myFilter(s);
                 return false;
             }
         });
-
-        //This is for normal search view
-        //      ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line,names);
-        //       listview_searchone.setAdapter(adapter);
-//        searchView_one.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) { //jaise hee search btn ke click hoga toh ye method execute hoga.
-//                return false;
-//            }
-//            @Override
-//            public boolean onQueryTextChange(String newText) { //jaise hee text type hoga oo search krne lagega
-//                adapter.getFilter().filter(newText);
-//                return false;
-//            }
-//        });
     }
 }

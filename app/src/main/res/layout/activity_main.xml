@@ -113,7 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="CursorAdapter"
+            android:text="BaseAdapter"
             android:textAllCaps="false"
             android:textSize="15sp" />
         <androidx.appcompat.widget.AppCompatButton
@@ -121,7 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Custom_SimpleAdapter"
+            android:text=""
             android:textAllCaps="false"
             android:textSize="15sp" />
     </LinearLayout>
